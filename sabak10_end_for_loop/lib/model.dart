@@ -1,6 +1,9 @@
+import 'package:flutter/material.dart';
+
 class Student {
   Student(
       {required this.id,
+      required this.image,
       required this.name,
       required this.surName,
       required this.age,
@@ -13,6 +16,7 @@ class Student {
       this.marriage});
 
   final int id;
+  final String image;
   final String name;
   final String surName;
   int age;
@@ -34,7 +38,8 @@ final bilal = Student(
     password: 'bilal1',
     address: 'bishkek',
     gender: 'male',
-    group: 1);
+    group: 1,
+    image: 'assets/images/bilal.jpg');
 
 final abdulla = Student(
     id: 2,
@@ -45,7 +50,8 @@ final abdulla = Student(
     password: 'abdulla1',
     phone: '+996700254879',
     address: 'batken',
-    group: 1);
+    group: 1,
+    image: 'assets/images/bilal.jpg');
 
 final eldana = Student(
     id: 3,
@@ -57,7 +63,8 @@ final eldana = Student(
     address: 'bishkek',
     marriage: 'single',
     gender: 'female',
-    group: 1);
+    group: 1,
+    image: 'assets/images/bilal.jpg');
 
 final zuli = Student(
     id: 4,
@@ -68,7 +75,8 @@ final zuli = Student(
     password: 'zuli1',
     address: 'batken',
     phone: '+996508563214',
-    group: 1);
+    group: 1,
+    image: 'assets/images/bilal.jpg');
 
 final imran = Student(
     id: 5,
@@ -79,16 +87,19 @@ final imran = Student(
     password: 'imran1',
     address: 'osh',
     phone: '+996200589632',
-    group: 1);
+    group: 1,
+    image: 'assets/images/bilal.jpg');
 
 final alinur = Student(
-    id: 6,
-    name: 'alinur',
-    surName: 'mirbekov',
-    age: 23,
-    email: 'alinur@mail',
-    password: 'alinur1',
-    address: 'tokmok',
-    marriage: 'single',
-    phone: '+996505982147',
-    group: 1);
+  id: 6,
+  name: 'alinur',
+  surName: 'mirbekov',
+  age: 23,
+  email: 'alinur@mail',
+  password: 'alinur1',
+  address: 'tokmok',
+  marriage: 'single',
+  phone: '+996505982147',
+  group: 1,
+  image: 'assets/images/bilal.jpg',
+);

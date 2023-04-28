@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
           context,
           MaterialPageRoute(
             builder: (context) => UserPage(
-              student: student.name,
+              student: student,
             ),
           ),
         );
@@ -93,9 +93,9 @@ class _LoginPageState extends State<LoginPage> {
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: NetworkImage(
-                  'https://images.unsplash.com/photo-1624466548064-b98215a03cf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHZlcnRpY2FsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'),
-            ),
+                image: NetworkImage(
+                    'https://media.istockphoto.com/id/1221473823/photo/circle-of-smoke.jpg?b=1&s=170667a&w=0&k=20&c=76YhCUer9vjU-MzZFKXIPGARYqlb0VvbPzlM555OPSI='),
+                fit: BoxFit.cover),
           ),
           child: Padding(
             padding: const EdgeInsets.only(
@@ -123,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                         style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.w200,
-                            color: Colors.green),
+                            color: Color.fromARGB(255, 60, 103, 177)),
                       ),
                     ],
                   ),
@@ -133,12 +133,12 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(
                           fontSize: 27,
                           fontWeight: FontWeight.w600,
-                          color: Colors.green),
+                          color: Color.fromARGB(255, 123, 57, 116)),
                     ),
                   ),
                   const Text(
                     "Register please",
-                    style: TextStyle(color: Colors.green),
+                    style: TextStyle(color: Color.fromARGB(255, 123, 57, 116)),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -151,7 +151,8 @@ class _LoginPageState extends State<LoginPage> {
                       decoration: const InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: "Name",
-                        labelStyle: TextStyle(color: Colors.green),
+                        labelStyle:
+                            TextStyle(color: Color.fromARGB(255, 123, 57, 116)),
                       ),
                     ),
                   ),
@@ -169,7 +170,8 @@ class _LoginPageState extends State<LoginPage> {
                       decoration: const InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: "Gmail",
-                        labelStyle: TextStyle(color: Colors.green),
+                        labelStyle:
+                            TextStyle(color: Color.fromARGB(255, 123, 57, 116)),
                       ),
                     ),
                   ),
@@ -187,7 +189,8 @@ class _LoginPageState extends State<LoginPage> {
                       decoration: const InputDecoration(
                         border: OutlineInputBorder(),
                         labelText: "password",
-                        labelStyle: TextStyle(color: Colors.green),
+                        labelStyle:
+                            TextStyle(color: Color.fromARGB(255, 123, 57, 116)),
                       ),
                     ),
                   ),
@@ -197,7 +200,7 @@ class _LoginPageState extends State<LoginPage> {
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       minimumSize: const Size(150, 40),
-                      backgroundColor: const Color.fromARGB(234, 86, 171, 87),
+                      backgroundColor: Color.fromARGB(255, 122, 170, 188),
                     ),
                     onPressed: () {
                       controlNameEmailPassword(_name!, _gmail!);
